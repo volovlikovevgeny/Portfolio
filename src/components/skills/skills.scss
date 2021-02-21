@@ -1,0 +1,119 @@
+.skills {
+    .skills-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            .text {
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .right {
+            min-height: 500px;
+
+            .tabs {
+                margin-bottom: 17px;
+                button {
+                    min-width: 90px;
+                    background-color: #2c7ae7;
+                    color: #fff;
+                    font-size: 15px;
+                    padding: 10px;
+                    margin: 0 10px 5px;
+                    border-radius: 6px;
+                    border: 2px solid #2c7ae7;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: #2c7ae7;
+                        background-color: #000;
+                    }
+                }
+            }
+            span {
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .info {
+                display: flex;
+                margin-bottom: 5px;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .bars {
+                margin-bottom: 15px;
+
+                .line {
+                    height: 5px;
+                    width: 100%;
+                    background-color: #fff;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+
+                        left: 0;
+                        top: 0;
+                        background-color: #2c7ae7;
+                    }
+                }
+                .html::before {
+                    width: 95%;
+                }
+                .css::before {
+                    width: 92%;
+                }
+                .js::before {
+                    width: 90%;
+                }
+
+                .react::before {
+                    width: 88%;
+                }
+
+                .redux::before {
+                    width: 85%;
+                }
+
+                .node::before {
+                    width: 77%;
+                }
+                .git::before {
+                    width: 93%;
+                }
+                .postgres::before {
+                    width: 70%;
+                }
+                .next-js::before {
+                    width: 85%;
+                }
+                .typescript::before {
+                    width: 70%;
+                }
+            }
+        }
+        .column {
+            width: calc(50% - 30px);
+        }
+    }
+
+    @media (max-width: 1003px) {
+        .skills-content .column {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+}
